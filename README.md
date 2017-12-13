@@ -1,4 +1,6 @@
-
+# 避免每次重啟Container後，都要重新下載keras datasets，把本機的datasets mount過去container
+ * docker run -v=/home/allen:/srv -v=/home/allen/.keras:/root/.keras -d -p=6006:6006 -p=8888:8888 gw000/keras-full
+ 
 # kears in docker
  * https://qiita.com/niisan-tokyo/items/095ce51d366c3b24f229
  * https://hub.docker.com/r/gw000/keras/
